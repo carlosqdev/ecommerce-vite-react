@@ -1,0 +1,22 @@
+.menuItem
+  position: relative
+  font-weight: var(--font_regular)
+  transition: all .2s ease-in
+
+.menuItem:hover::after
+  content: ""
+  width: 100%
+  height: 2px
+  background-color: var(--orange)
+  position: absolute
+  left: 0
+  bottom: -31px
+  transition: all .2s ease-in
+
+.navLink
+  text-decoration: none
+  color: var(--dark_grayish_blue)
+  font-size: 16px
+
+.navLink:hover
+  color: var(--black)

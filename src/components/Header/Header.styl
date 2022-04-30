@@ -1,0 +1,30 @@
+.header_wrapper
+  width: 90%
+  height: 80px
+  margin: 0 auto
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  align-items: center
+
+  @media screen and (min-width: 1024px)
+    width: 90%
+    border-bottom: 2px solid rgba(0,0,0,0.1)
+
+.header_content
+  width: fit-content
+  display: grid
+  align-items: center
+
+.content_left
+  grid-template-columns: 1fr 120px
+  grid-template-areas: "menu logo"
+  gap: 20px
+
+  @media screen and (min-width: 1024px)
+    gap: 50px
+    grid-template-columns: 120px 1fr
+    grid-template-areas: "logo menu"
+
+.content_right
+  grid-template-columns: 50px 1fr
+  margin-left: auto
